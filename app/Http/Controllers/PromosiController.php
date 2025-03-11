@@ -11,7 +11,10 @@ class PromosiController extends Controller
      */
     public function index()
     {
-        return view('promosi');
+        $title = 'Welcome to Our Website';
+        return view('promosi',[
+            'title' => $title
+        ]);
     }
 
     /**

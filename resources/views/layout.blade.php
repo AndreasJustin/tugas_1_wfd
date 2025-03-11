@@ -15,11 +15,10 @@
 </head>
 
 <body>
-    <div class="relative min-w-screen min-h-screen flex flex-col justify-center items-center">
-            @include('navbar')
-            @yield('content')
-        </div>
-        <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+        @yield('content')
+
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+    
 </body>
 @yield('script')
 
