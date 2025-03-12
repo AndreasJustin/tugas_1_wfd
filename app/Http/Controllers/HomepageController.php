@@ -4,16 +4,18 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class PromosiController extends Controller
+class HomepageController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $title = 'Welcome to Our Website';
-        return view('promosi',[
-            'title' => $title
+        $title = 'Welcome to FoodNesia!';
+        $head = 'Home';
+        return view('index',[
+            'title' => $title,
+            'head' => $head
         ]);
     }
 
