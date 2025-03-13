@@ -19,12 +19,22 @@ class HomepageController extends Controller
         ]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
+    public function about(){
+        $title = 'About Us';
+        $head = 'About';
+        return view('about',[
+            'title' => $title,
+            'head' => $head
+        ]);
+    }
+    public function catalog()
     {
-        //
+        $title = 'Catalog';
+        $head = 'Catalog';
+        return view('catalog',[
+            'title' => $title,
+            'head' => $head
+        ]);
     }
 
     /**

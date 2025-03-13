@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\AboutController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomepageController;
 
@@ -8,4 +7,5 @@ use App\Http\Controllers\HomepageController;
 //     return view('welcome');
 // });
 Route::get('/',[HomepageController::class,'index'])->name('index');
-Route::get('/about',[AboutController::class,'index'])->name('about');
+Route::get('/about',[HomepageController::class,'about'])->name('about');
+Route::get('/catalog',[HomepageController::class,'catalog'])->name('catalog');

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{{asset('asset/image/food-svgrepo-com.svg')}}">
     <title>FoodNesia | {{ $head }}</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
@@ -18,7 +19,7 @@
     @yield('head')
     <style>
         html {
-            scroll-behavior: smooth;
+            scroll-behavior: smooth !important;
         }
 
         .cinzel-regular {
@@ -57,6 +58,16 @@
             font-optical-sizing: auto;
             font-weight: 400;
             font-style: normal;
+        }
+        
+        .text-red{
+            color: #F03861;
+        }
+        .bg-orange{
+            background-color: #F5D97E;
+        }
+        .bg-brown{
+            background-color: #7D5E3F;
         }
     </style>
 </head>
